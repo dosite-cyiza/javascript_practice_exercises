@@ -10,3 +10,7 @@ let radius = 6
 // Calculation of Circumference
 let circumference = 2 * Math.PI * radius
 console.log(`circumference  of circle is ${circumference}`)
+
+// Calculation of Area
+let area = Math.PI * (radius*radius)
+console.log(`Area of circle is ${area}`)
