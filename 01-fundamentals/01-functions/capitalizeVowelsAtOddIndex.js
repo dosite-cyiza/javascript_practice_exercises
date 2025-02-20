@@ -25,6 +25,6 @@ for(let i = 0; i< str.length;i++){
     return result
     }
 console.log(capitalizeVowels('hello world'))
-console.log(capitalizeVowels("javascript is an awesomelanguage"))
+console.log(capitalizeVowels("javascript is an awesome language"))
 console.log(capitalizeVowels("quick brown fox jumps over the lazy dog"))
 console.log(capitalizeVowels("test with no changes"))
