@@ -8,12 +8,12 @@ Your goal in this kata is to create complete the mouth_size method this method t
 
  */
 function mouthSize(animal) {
-    // code here
-    if (animal === 'alligator'){
-      return 'small'
-    }
-    else{
-      return 'wide'
-    }
+  // code here
+  if (animal === 'alligator'|| animal === 'ALLIGATOR'){
+    return 'small'
   }
+  else{
+    return 'wide'
+  }
+}
   console.log(mouthSize('alligator') )
