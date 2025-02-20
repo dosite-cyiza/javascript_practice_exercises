@@ -10,3 +10,8 @@ function sum(...nums) {
     return total;
   }
   console.log(sum(2,3,4,5))
+
+
+
+
+
