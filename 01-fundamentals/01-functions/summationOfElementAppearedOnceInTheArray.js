@@ -10,3 +10,4 @@ const summationOfElementFromArray = (arr) =>{
     return filteredArray.reduce((acc,curr) => acc+curr,0)
 }
 console.log(summationOfElementFromArray([1,1,2,4]))
+
