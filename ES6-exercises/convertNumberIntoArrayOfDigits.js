@@ -5,3 +5,8 @@ Write a JavaScript program to convert a specified number into an array of digits
 //first way 
 const convertNumber =(num) => num.toString().split("").map(Number) 
 console.log(convertNumber(123456))
+
+// Second Way
+
+const convertNumbers =(num) => [...num.toString()].map(Number)
+console.log(convertNumbers(1278787798))
