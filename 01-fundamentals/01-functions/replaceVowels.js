@@ -11,3 +11,9 @@ const replaceVowels = (s) =>{
  return s.replace(/[aeiouAEIOU]/g,'!')
 }
 console.log(replaceVowels('Hello'))
+
+function handleFunction(string)
+{
+    return string.split(/[A-Z]/)
+}
+console.log(handleFunction("DosIte"))
