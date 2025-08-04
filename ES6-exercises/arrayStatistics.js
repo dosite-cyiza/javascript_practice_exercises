@@ -18,11 +18,14 @@ arrayStats([1, 2, 3, 4, 5]); // should return { sum: 15, average: 3.00, min: 1, 
 const arrayStats = (arr) =>{
     let sumOfNums = arr.reduce((curr,acc) => curr+acc,0)
     let averageOfNums = arr.reduce((curr,acc) => curr + acc,0) / arr.length
-   
+    let minimumNumberInArr = Math.min(...arr)   
+    let maximumNumberInArr = Math.max(...arr)
 
     return {
         sum: sumOfNums,
-        averageOfNums: averageOfNums
+        averageOfNums: averageOfNums,
+        min: minimumNumberInArr,
+        max: maximumNumberInArr
     }
 }
 console.log(arrayStats([1, 2, 3, 4, 5]))
