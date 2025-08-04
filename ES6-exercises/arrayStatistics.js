@@ -23,9 +23,9 @@ const arrayStats = (arr) =>{
 
     return {
         sum: sumOfNums,
-        averageOfNums: averageOfNums,
+        averageOfNums:averageOfNums.toFixed(2),
         min: minimumNumberInArr,
         max: maximumNumberInArr
     }
 }
-console.log(arrayStats([1, 2, 3, 4, 5]))
+console.log(arrayStats([1, 2,3, 4, 5]))
