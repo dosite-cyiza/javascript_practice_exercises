@@ -17,10 +17,12 @@ arrayStats([1, 2, 3, 4, 5]); // should return { sum: 15, average: 3.00, min: 1, 
 
 const arrayStats = (arr) =>{
     let sumOfNums = arr.reduce((curr,acc) => curr+acc,0)
+    let averageOfNums = arr.reduce((curr,acc) => curr + acc,0) / arr.length
    
 
     return {
-        sum: sumOfNums
+        sum: sumOfNums,
+        averageOfNums: averageOfNums
     }
 }
 console.log(arrayStats([1, 2, 3, 4, 5]))
