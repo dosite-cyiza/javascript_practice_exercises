@@ -10,11 +10,18 @@ you are given an object with properties that may contain null or undefined value
   const convertNullableValues = () =>{
                 let objValues = {
                     name:"kellia",
-                    age: undefined,
+                    age: null,
                     address:''
                 }
                 for(let value in objValues){
-                    console.log(value)
+                    // console.log(value)
+                    if(value == null){
+                        console.log(value = 0)
+                    }
+                    else if(value == undefined){
+                        console.log(value = ' ')
+                    }
+                    // return objValues
                 }
   }
   console.log(convertNullableValues())
