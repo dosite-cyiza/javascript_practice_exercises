@@ -11,17 +11,18 @@ you are given an object with properties that may contain null or undefined value
                 let objValues = {
                     name:"kellia",
                     age: null,
-                    address:''
+                    address:undefined,
+                    city: undefined
                 }
+                console.log(objValues["age"])
                 for(let value in objValues){
-                    // console.log(value)
-                    if(value == null){
-                        console.log(value = 0)
-                    }
-                    else if(value == undefined){
-                        console.log(value = ' ')
-                    }
-                    // return objValues
+                    if(objValues[value] === null){
+                        objValues[value] = 0
+                       
+                    } else if(objValues[value] === undefined){
+                        objValues[value] = ' '
+                    } 
                 }
+                return objValues
   }
   console.log(convertNullableValues())
