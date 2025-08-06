@@ -39,12 +39,18 @@ For myForEach, you'll need to loop through each element and execute the callback
 // myMap
 
 const myMap = (arr,callback) =>{
-    for (let i=0; i < arr.length; i++){
-        callback(arr[i],i,arr)
+    const myData = []
+    let i
+    for (i = 0; i < arr.length; i++){
+        const result = callback(arr[i],i,arr)
+        myData.push(result)
+    
     }
+     return myData
     
     
 }
 console.log(myMap([1,2,3,4,5],(ele,index) =>{
     console.log(`This ${ele} element on ${index} index in array After calling callback on it is equal to ${ele * 2}`)
+    return ele*2
 }))
