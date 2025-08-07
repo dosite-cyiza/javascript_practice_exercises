@@ -87,3 +87,21 @@ const myFilter = (arr,callback) =>{
 console.log(myFilter([1,2,3,3,4,5],(ele,index,arr) =>{
     return arr.indexOf(ele) === arr.lastIndexOf(ele)
 }))
+
+// --------------------------------myFilter Method----------------------------
+console.log("myFilter method")
+
+Array.prototype.myFilter = function (callback){
+    let myData = []
+    for(let i=0; i < this.length; i++){
+        if(callback(this[i],i,this)){
+        myData.push(this[i])
+        }
+    }
+    return myData
+}
+ let myNumber = [1,2,3,4,5,6,7]
+ let resultFilter = myNumber.myFilter((num) =>{
+    return num % 2 == 0
+ } )
+ console.log(resultFilter)
