@@ -36,7 +36,7 @@ For myForEach, you'll need to loop through each element and execute the callback
 
  */
 
-// myMap
+// ----------------------myMap Function--------------
 
 const myMap = (arr,callback) =>{
     const myData = []
@@ -51,7 +51,27 @@ const myMap = (arr,callback) =>{
 console.log(myMap([1,2,3,4,5],(ele,index) =>{
     return ele*2
 }))
-//------------------------ myFilter---------------------------
+
+// -----------------------myMap Method--------------------------
+console.log("myMap Method")
+Array.prototype.myMap = function(callback){
+    let myData = []
+    for(let i= 0; i < this.length; i++){
+       myData.push(callback(this[i], i, this))
+
+
+    }
+    return myData
+
+}
+
+    const oldData = [1,2,3,4,5,7]
+    let result = oldData.myMap((num) => {
+       return  num * 2 ;
+    })
+    console.log(result)
+
+//------------------------ myFilter Function ---------------------------
 const myFilter = (arr,callback) =>{
     const myFilteredData = []
     let i
