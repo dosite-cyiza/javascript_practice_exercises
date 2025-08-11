@@ -105,3 +105,24 @@ Array.prototype.myFilter = function (callback){
     return num % 2 == 0
  } )
  console.log(resultFilter)
+
+//---------------------------------myForEach Method------------------------------
+
+console.log("MyForEach Method")
+
+Array.prototype.myForEach = function(callback) {
+    let result = []
+    for(let i=0 ; i < this.length; i++){
+        callback(this[i], i, this)
+        result.push(this[i])
+ 
+    }
+    return result
+}
+let numbers = [1,2,3,4,5,6,7]
+console.log(numbers.myForEach(ele => ele))
+
+
+
+  
+ 
