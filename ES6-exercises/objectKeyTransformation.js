@@ -23,22 +23,25 @@ console.log(transformedObject);
 // should return { FIRSTNAME: "John", LASTNAME: "Doe", AGE: 30 }
 ```
  */
-let inputObj =   {
+const transformKeys = (obj) => {
+    let result
+    let transformedObject ={}
+    for(key in obj){
+      const newKey = transformationFunction(key)
+      transformedObject[newKey]   = obj[key]
+    }
+    return transformedObject
+
+}
+const transformationFunction = (key)=>{
+return key.toUpperCase()
+
+}
+
+console.log(transformKeys(
+    {
   firstName: "John",
   lastName: "Doe",
   age: 30
 }
-const transformKeys = (obj) => {
-
-    let result
-    for(key in obj){
-      result = transformationFunction(key)
-    }
-    return result
-
-};
-const transformationFunction = (key)=>{
-return key.toUpperCase()
-}
-
-console.log(transformKeys(inputObj,transformationFunction));
+));
