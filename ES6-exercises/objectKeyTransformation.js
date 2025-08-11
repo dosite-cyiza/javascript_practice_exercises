@@ -24,18 +24,18 @@ console.log(transformedObject);
 ```
  */
 const transformKeys = (obj) => {
-    let result
+
     let transformedObject ={}
+
     for(key in obj){
       const newKey = transformationFunction(key)
-      transformedObject[newKey]   = obj[key]
+      transformedObject[newKey] = obj[key]
     }
     return transformedObject
-
 }
+
 const transformationFunction = (key)=>{
 return key.toUpperCase()
-
 }
 
 console.log(transformKeys(
@@ -43,5 +43,4 @@ console.log(transformKeys(
   firstName: "John",
   lastName: "Doe",
   age: 30
-}
-));
+}))
