@@ -54,7 +54,7 @@ console.log(myMap([1,2,3,4,5],(ele,index) =>{
 
 // -----------------------myMap Method--------------------------
 console.log("myMap Method")
-Array.prototype.myMap = function(callback){
+Array.prototype.myMap = (callback) =>{
     let myData = []
     for(let i= 0; i < this.length; i++){
        myData.push(callback(this[i], i, this))
@@ -91,7 +91,7 @@ console.log(myFilter([1,2,3,3,4,5],(ele,index,arr) =>{
 // --------------------------------myFilter Method----------------------------
 console.log("myFilter method")
 
-Array.prototype.myFilter = function (callback){
+Array.prototype.myFilter = (callback) =>{
     let myData = []
     for(let i=0; i < this.length; i++){
         if(callback(this[i],i,this)){
@@ -110,7 +110,7 @@ Array.prototype.myFilter = function (callback){
 
 console.log("MyForEach Method")
 
-Array.prototype.myForEach = function(callback) {
+Array.prototype.myForEach = (callback) => {
     let result = []
     for(let i=0 ; i < this.length; i++){
         callback(this[i], i, this)
