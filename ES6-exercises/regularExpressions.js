@@ -43,3 +43,9 @@ const stringAny = "Have fun with them and if you have problem don't hesitate to 
 const stringAnyRegex = /.em/
 const stringAnyRegexResult = stringAny.match(stringAnyRegex)
 console.log(stringAnyRegexResult)
+
+//--------------------Match single character with multiple possibilities------
+const stringMany = "Have fun with them and if you fin have problem don't hesitate to ask for help"
+const stringManyRegex = /f[aieou]n/gi
+const results = stringMany.match(stringManyRegex)
+console.log(results)
