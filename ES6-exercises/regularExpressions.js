@@ -116,7 +116,14 @@ console.log(numAndStrMatchResult)
  console.log(quoteSampleRegexResult)
 
  //----------------------------Matching everything but not letters and numbers-------------------------------
-  const quoteSamples = "The five boxing wizard2s ju3mp  456 quickly."
+  const quoteSamples = "The five boxing $! wizard2s ju3mp  456 quickly."
  const quoteSamplesRegex = /\W/g
  const quoteSamplesRegexResult = quoteSamples.match(quoteSamplesRegex).length
  console.log(quoteSamplesRegexResult)
+
+ //-------------------------Matching all numbers ---------------------------------------------------------
+
+  const quoteSampless = "The five boxing $! wizard2s ju3mp  456 quickly."
+ const quoteSamplessRegex = /\d/g
+ const quoteSamplessRegexResult = quoteSampless.match(quoteSamplessRegex).length
+ console.log(quoteSamplessRegexResult)
