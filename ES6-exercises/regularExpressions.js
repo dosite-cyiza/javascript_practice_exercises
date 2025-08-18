@@ -62,3 +62,9 @@ const numAndStrMatchRegex = /[0-9a-z]/gi
 
 const numAndStrMatchResult = numAndStrMatch.match(numAndStrMatchRegex)
 console.log(numAndStrMatchResult)
+
+//--------------------Match single character not specified ----------------
+ const mySentence = "Hello 1 and Hello 2"
+ const mySentenceRegex = /[^0-9aiueo]/gi
+ const mySentenceRegexResult = mySentence.match(mySentenceRegex)
+ console.log(mySentenceRegexResult)
