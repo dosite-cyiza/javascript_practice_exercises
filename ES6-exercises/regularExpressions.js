@@ -55,3 +55,10 @@ const alphabetStr = "Hello World"
 const alphabetStrRegex = /[a-z]/ig
 const alphabetStrResult = alphabetStr.match(alphabetStrRegex)
 console.log(alphabetStrResult)
+
+//-------------Match Numbers and Letters of The  Alphabet-----
+const numAndStrMatch = "Hello the total is 20000frw"
+const numAndStrMatchRegex = /[0-9a-z]/gi
+
+const numAndStrMatchResult = numAndStrMatch.match(numAndStrMatchRegex)
+console.log(numAndStrMatchResult)
