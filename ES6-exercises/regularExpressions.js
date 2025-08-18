@@ -17,4 +17,12 @@ const regexPet = /cat| pet| dog | cow/
 const regexPetResult = regexPet.test(petString)
 console.log(regexPetResult)
 
+// -----Ignore CAse while matching-----
+// We include flags inorder to ignore cases (i) flag
+const stringCase = "Hello World"
+ const myRegexCase = /hello/i
+ const resultCases = myRegexCase.test(stringCase)
+ console.log(resultCases)
+
+
 
