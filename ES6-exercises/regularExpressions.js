@@ -37,7 +37,7 @@ const myRegexStr = /Twinkle/gi
 const stringMatchResult = stringMatch.match(myRegexStr)
 console.log(stringMatchResult)
 
-//-------------------- Math anything with  wild card period----------
+//-------------------- Match anything with  wild card period----------
 
 const stringAny = "Have fun with them and if you have problem don't hesitate to ask for help"
 const stringAnyRegex = /.em/
@@ -82,3 +82,10 @@ console.log(numAndStrMatchResult)
  const soccerWordRegex = /go*/g
  const soccerWordResult = soccerWord.match(soccerWordRegex)
  console.log(soccerWordResult)
+
+ // ----------------------A character with lazy matchings ----------------
+
+  const sentenceLazy= "<h1>gooooal!</h1>"
+ const sentenceLazyRegex = /<.*?>/
+ const sentenceLazyRegexResult = sentenceLazy.match(sentenceLazyRegex)
+ console.log(sentenceLazyRegexResult)
