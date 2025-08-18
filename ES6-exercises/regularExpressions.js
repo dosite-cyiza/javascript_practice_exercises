@@ -107,3 +107,11 @@ console.log(numAndStrMatchResult)
  const crowdsWordRegex = /9$/
  const crowdsWordRegexResult = crowdsWordRegex.test(crowdsWord)
  console.log(crowdsWordRegexResult)
+
+ //------------------------------Matching all numbers and Letters ------------------------------------------
+
+ const quoteSample = "The five boxing wizard2s ju3mp  456 quickly. "
+ const quoteSampleRegex = /\w/g
+ const quoteSampleRegexResult = quoteSample.match(quoteSampleRegex).length
+ console.log(quoteSampleRegexResult)
+ 
