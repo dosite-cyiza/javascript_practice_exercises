@@ -145,4 +145,15 @@ console.log(numAndStrMatchResult)
     let usernamesRegex = /^[A-Za-z]{2,}\d*$/
     let usernamesRegexResult = usernamesRegex.test(username)
     console.log(usernamesRegexResult)
+//------------ Matching White spaces --------------------------
 
+let sample= "Jacky Umurer wa "
+    let sampleRegex = /\s/g
+    let sampleRegexResult = sample.match(sampleRegex)
+    console.log(sampleRegexResult)
+//------------ Matching all non-White spaces characters --------------------------
+
+let samples= "Jacky Umurer wa "
+    let samplesRegex = /\S/g
+    let samplesRegexResult = samples.match(samplesRegex)
+    console.log(samplesRegexResult)
