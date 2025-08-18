@@ -63,7 +63,7 @@ const numAndStrMatchRegex = /[0-9a-z]/gi
 const numAndStrMatchResult = numAndStrMatch.match(numAndStrMatchRegex)
 console.log(numAndStrMatchResult)
 
-//--------------------Match single character not specified ----------------
+//--------------------Match single character not specified ----------------------------------------------------------------
  const mySentence = "Hello 1 and Hello 2"
  const mySentenceRegex = /[^0-9aiueo]/gi
  const mySentenceRegexResult = mySentence.match(mySentenceRegex)
@@ -83,9 +83,15 @@ console.log(numAndStrMatchResult)
  const soccerWordResult = soccerWord.match(soccerWordRegex)
  console.log(soccerWordResult)
 
- // ----------------------A character with lazy matchings ----------------
+ // ----------------------Find characters with lazy matchings ---------------------------------------------------
 
   const sentenceLazy= "<h1>gooooal!</h1>"
  const sentenceLazyRegex = /<.*?>/
  const sentenceLazyRegexResult = sentenceLazy.match(sentenceLazyRegex)
  console.log(sentenceLazyRegexResult)
+
+ // -----------------------Find one or more criminals in a hunt---------------
+ const crowd = "P1P2P3P4P5P6CCCP7P8P9"
+ const crowdRegex = /C+/
+ const crowdRegexResult = crowd.match(crowdRegex)
+ console.log(crowdRegexResult)
