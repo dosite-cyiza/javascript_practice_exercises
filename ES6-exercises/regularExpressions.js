@@ -33,6 +33,6 @@ const stringExtract = "Hello World"
 //------------------- Find more than the first match---------
 
 const stringMatch = "Twinkle Twinkle twinkle little star"
-const myRegexStr = /Twinkle/g
+const myRegexStr = /Twinkle/gi
 const stringMatchResult = stringMatch.match(myRegexStr)
 console.log(stringMatchResult)
