@@ -24,5 +24,15 @@ const stringCase = "Hello World"
  const resultCases = myRegexCase.test(stringCase)
  console.log(resultCases)
 
+// -----------------------------------------------------Extract Matches -----------------------------------------------
+const stringExtract = "Hello World"
+ const myRegexExtract= 'World'
+ const stringExtractResult = stringExtract .match(myRegexExtract)
+ console.log(stringExtractResult)
 
+//------------------- Find more than the first match---------
 
+const stringMatch = "Twinkle Twinkle twinkle little star"
+const myRegexStr = /Twinkle/g
+const stringMatchResult = stringMatch.match(myRegexStr)
+console.log(stringMatchResult)
