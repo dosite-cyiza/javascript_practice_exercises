@@ -36,3 +36,10 @@ const stringMatch = "Twinkle Twinkle twinkle little star"
 const myRegexStr = /Twinkle/gi
 const stringMatchResult = stringMatch.match(myRegexStr)
 console.log(stringMatchResult)
+
+//-------------------- Math anything with  wild card period----------
+
+const stringAny = "Have fun with them and if you have problem don't hesitate to ask for help"
+const stringAnyRegex = /.em/
+const stringAnyRegexResult = stringAny.match(stringAnyRegex)
+console.log(stringAnyRegexResult)
