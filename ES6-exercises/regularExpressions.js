@@ -49,3 +49,9 @@ const stringMany = "Have fun with them and if you fin have problem don't hesitat
 const stringManyRegex = /f[aieou]n/gi
 const results = stringMany.match(stringManyRegex)
 console.log(results)
+
+//----------------match letters of the Alphabet-------------
+const alphabetStr = "Hello World"
+const alphabetStrRegex = /[a-z]/ig
+const alphabetStrResult = alphabetStr.match(alphabetStrRegex)
+console.log(alphabetStrResult)
