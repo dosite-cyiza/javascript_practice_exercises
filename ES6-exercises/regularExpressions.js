@@ -5,8 +5,16 @@
  //---------------------------- Test Method (This method takes regex to string and return true or false)------------------
  console.log("Test Method")
  const string = "Hello World"
- const myRegex = /Hello/
+ const myRegex = /hello/
  const result = myRegex.test(string)
  console.log(result)
+ // Regex is case sensitive
 
- 
+ //--------Matching literal string with different possibilities
+ // Regex has operator  (|)
+const petString = "James has a pet cat"
+const regexPet = /cat| pet| dog | cow/
+const regexPetResult = regexPet.test(petString)
+console.log(regexPetResult)
+
+
