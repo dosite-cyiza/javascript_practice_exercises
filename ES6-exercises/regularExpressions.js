@@ -95,3 +95,15 @@ console.log(numAndStrMatchResult)
  const crowdRegex = /C+/
  const crowdRegexResult = crowd.match(crowdRegex)
  console.log(crowdRegexResult)
+// ------------------------------------------------------Match begining string pattern----------------------------------
+
+ const crowds= "P1P2P3P4P5P6CCCP7P8P9"
+ const crowdsRegex = /^P/
+ const crowdsRegexResult = crowdsRegex.test(crowds)
+ console.log(crowdsRegexResult)
+ //----------------------------------Match Ending string pattern------------------------------------------------------
+
+ const crowdsWord= "P1P2P3P4P5P6CCCP7P8P9"
+ const crowdsWordRegex = /9$/
+ const crowdsWordRegexResult = crowdsWordRegex.test(crowdsWord)
+ console.log(crowdsWordRegexResult)
