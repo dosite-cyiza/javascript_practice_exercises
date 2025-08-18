@@ -72,6 +72,13 @@ console.log(numAndStrMatchResult)
  // ------------------ Match character that occur one or more time---------
 
  const repeatingStr = "Mississipi"
- const repeatingStrRegex = /[s+]/gi
+ const repeatingStrRegex = /s+/gi
  const repeatingStrResult = repeatingStr.match(repeatingStrRegex)
  console.log(repeatingStrResult)
+
+ // -----------------Match character that occur zero or more time-------------
+
+ const soccerWord = "gooooal!"
+ const soccerWordRegex = /go*/g
+ const soccerWordResult = soccerWord.match(soccerWordRegex)
+ console.log(soccerWordResult)
