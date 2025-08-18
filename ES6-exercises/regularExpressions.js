@@ -127,3 +127,22 @@ console.log(numAndStrMatchResult)
  const quoteSamplessRegex = /\d/g
  const quoteSamplessRegexResult = quoteSampless.match(quoteSamplessRegex).length
  console.log(quoteSamplessRegexResult)
+
+ //------------------------Matching all non-numbers------------------------------
+  const numberSamples = "The five boxing $! wizard2s ju3mp  456 quickly."
+ const numberSamplesRegex = /\D/g
+ const numberSamplesRegexResult = numberSamples.match(numberSamplesRegex).length
+ console.log(numberSamplesRegexResult)
+
+ //-------------------------Restrict Possible usernames---------------------------------
+    /**
+     1. If there are numbers , they must be at the end.
+    2. Letters can be lower case and upper case.
+    3. At least two characters long. Two-letter names can't have numbers.
+     */
+
+    let username= "JackyUmurerwa"
+    let usernamesRegex = /^[A-Za-z]{2,}\d*$/
+    let usernamesRegexResult = usernamesRegex.test(username)
+    console.log(usernamesRegexResult)
+
