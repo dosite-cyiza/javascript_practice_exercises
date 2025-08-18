@@ -114,4 +114,9 @@ console.log(numAndStrMatchResult)
  const quoteSampleRegex = /\w/g
  const quoteSampleRegexResult = quoteSample.match(quoteSampleRegex).length
  console.log(quoteSampleRegexResult)
- 
+
+ //----------------------------Matching everything but not letters and numbers-------------------------------
+  const quoteSamples = "The five boxing wizard2s ju3mp  456 quickly."
+ const quoteSamplesRegex = /\W/g
+ const quoteSamplesRegexResult = quoteSamples.match(quoteSamplesRegex).length
+ console.log(quoteSamplesRegexResult)
