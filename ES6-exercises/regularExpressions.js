@@ -68,3 +68,10 @@ console.log(numAndStrMatchResult)
  const mySentenceRegex = /[^0-9aiueo]/gi
  const mySentenceRegexResult = mySentence.match(mySentenceRegex)
  console.log(mySentenceRegexResult)
+
+ // ------------------ Match character that occur one or more time---------
+
+ const repeatingStr = "Mississipi"
+ const repeatingStrRegex = /[s+]/gi
+ const repeatingStrResult = repeatingStr.match(repeatingStrRegex)
+ console.log(repeatingStrResult)
