@@ -170,3 +170,9 @@ let timStr = "Timmmmber"
 let timRegex = /Tim{4}ber/
 let timRegexResult = timRegex.test(timStr)
 console.log(timRegexResult)
+
+//--------------check for all or none=----------------------------------------------------------
+let favStr = "Favorite"
+let favRegex = /Favou?rite/
+let favRegexResult = favRegex.test(favStr)
+console.log(favRegexResult)
