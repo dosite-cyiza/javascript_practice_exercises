@@ -197,3 +197,9 @@ console.log(wordRegex.test(sampleword))
 let repeatNum = "42 42 42 42"
 let repeatRegex  = /^(\d+)\s\1\s\1\s\1$/
 console.log(repeatRegex.test(repeatNum))
+
+//------------------------------Use capture groups to search and replace-----------------------
+
+let wrongText = "The sky is silver"
+let regex = /silver/
+console.log(wrongText.replace(regex,"blue"))
