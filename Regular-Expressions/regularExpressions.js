@@ -203,3 +203,13 @@ console.log(repeatRegex.test(repeatNum))
 let wrongText = "The sky is silver"
 let regex = /silver/
 console.log(wrongText.replace(regex,"blue"))
+
+//------------another way of replacing----
+
+console.log("Code Camp".replace(/(\w+)\s(\w+)/, "$2 $1"))
+
+//------------------------ Remove white space from start and end------------------
+
+let wordSpace = "  Hello,World   "
+let wordSpaceRegex = /^\s+|\s+$/g
+console.log(wordSpace.replace(wordSpaceRegex, ""))
