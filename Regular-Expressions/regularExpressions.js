@@ -176,3 +176,24 @@ let favStr = "Favorite"
 let favRegex = /Favou?rite/
 let favRegexResult = favRegex.test(favStr)
 console.log(favRegexResult)
+
+//----------------------------Positive and negative lookahead-------------------------------
+// practical use of lookahead is to check two or more patterns in one string.
+let quit = "qu"
+let noquit = "qt"
+
+let quitRegex = /q(?=u)/
+console.log(quit.match(quitRegex))
+
+let noquitRegex = /q(?!u)/
+console.log(noquit.match(noquitRegex))
+
+let sampleword= "dositeiradukunda !!12"
+let wordRegex = /(?=\w{5,}) (?=\D*\d{2})/
+console.log(wordRegex.test(sampleword))
+
+//-------------------------Reuse patterns using capture groups----------------------------------
+
+let repeatNum = "42 42 42 42"
+let repeatRegex  = /^(\d+)\s\1\s\1\s\1$/
+console.log(repeatRegex.test(repeatNum))
