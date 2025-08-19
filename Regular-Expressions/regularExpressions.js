@@ -163,3 +163,10 @@ let ohStr = "Ohhh no"
 let ohStrRegex = /Oh{3,6} no/
 let ohStrResult = ohStrRegex.test(ohStr)
 console.log(ohStrResult)
+
+//------------------------Specify exact number of matches--------------------------------------------
+
+let timStr = "Timmmmber"
+let timRegex = /Tim{4}ber/
+let timRegexResult = timRegex.test(timStr)
+console.log(timRegexResult)
