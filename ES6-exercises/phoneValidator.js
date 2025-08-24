@@ -17,6 +17,6 @@ validatePhoneNumber("1234-567890"); // should return false
  */
 
 const validatePhoneNumber =(str) =>{
-    return /^[\d{10}]$/.test(str)
+    return /^\d{3}[-\s]?\d{3}[-\s]?\d{4}$/.test(str)
 }
-console.log(validatePhoneNumber("0782345679"))
+console.log(validatePhoneNumber("1234-567890"))
