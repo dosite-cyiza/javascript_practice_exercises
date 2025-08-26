@@ -11,11 +11,11 @@ const reverseString = (str) => {
     .split(" ")
     .map((char) => {
       if (char.length > 1) {
-        console.log(char.split("").reverse().join(""));
+        return char.split("").reverse().join("")
       } else {
-        console.log(char);
+        return char
       }
     })
-    .join("");
+    .join(" ");
 };
 console.log(reverseString("I am the good boy"));
