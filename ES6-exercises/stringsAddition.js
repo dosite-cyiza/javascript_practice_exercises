@@ -10,5 +10,10 @@ ES6 has introduced another way of joining strings. Your task is to find out
 If one of the arguments is a number your code must coerce it into being a string.
 
  */
+const concatenateString = (str1,str2) =>{
+    return `${str1} ${str2}`
+}
+console.log("joe","Doe")
+console.log("joe","10")
 
 
