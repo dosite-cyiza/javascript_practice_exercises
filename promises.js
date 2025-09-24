@@ -20,7 +20,7 @@ console.log(findUser("jane"));
 
 console.log("--------------------------Getting users from list by using setTimeout method")
 
-// Using setTimeout call back to delay the response.'
+// Using setTimeout  to delay the response.'
 
 
 const getUsers = () => {
@@ -44,7 +44,7 @@ console.log(findUser2("jane"));
 
 console.log("--------------------------Getting users from list by using callback function")
 
-// Using callback fucntion to get users 
+// Using callback fucntion to deal with asynchronous operations. 
 
 const getUsers2 = (callback) =>{
     setTimeout(() => {
@@ -61,3 +61,27 @@ const findUser3 =(name, callback)=>{
   })
 }
 console.log(findUser3("john",console.log))
+
+
+// Consume then Method
+
+console.log("-----------------------------------consuming then() method to handle async operation")
+
+const getUsers3 = () =>{
+    return new Promise((resolve,reject) =>{
+        setTimeout(() =>{
+           resolve( [
+                {name:"joe", email:"joe@gmail.com"},
+                {name:"doe", email:"doe@gmail.com"}
+
+            ])
+        },1000)
+    })
+}
+
+const onFullfilled =(users) =>{
+    console.log(users)
+}
+
+const promise = getUsers3("doe")
+promise.then(onFullfilled)
