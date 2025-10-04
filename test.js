@@ -33,7 +33,6 @@ Array.prototype.myFilter = function(callback){
 
 let datas = [2,4,6,8,9]
 const filterResult = datas.myFilter((ele)=>{
-    if(ele % 2 == 0){
-        return ele
-    }
+    return ele % 2 == 0
 })
+console.log(filterResult)
