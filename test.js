@@ -49,3 +49,21 @@ Array.prototype.myForEach = function (callback){
 
 const numbers = [1,2,3,4,5]
 console.log(numbers.myForEach((ele) => console.log(ele)))
+
+// Array statistics 
+
+const arrayStats = (arr)=>{
+    let sum = arr.reduce((acc,curr)=> acc + curr,0)
+    let average = arr.reduce((acc,curr) => acc + curr,0) /arr.length
+    let minimum = Math.min(...arr)
+    let maximum = Math.max(...arr)
+
+    return{
+        sum,
+        average:average.toFixed(2),
+        minimum,
+        maximum
+    }
+
+}
+console.log(arrayStats([1,2,3,4,5]))
