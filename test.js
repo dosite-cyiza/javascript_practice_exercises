@@ -36,3 +36,16 @@ const filterResult = datas.myFilter((ele)=>{
     return ele % 2 == 0
 })
 console.log(filterResult)
+
+// my forEach method
+
+Array.prototype.myForEach = function (callback){
+  
+    for(let i = 0; i < this.length; i++){
+        callback(this[i],i,this)
+          }
+   
+}
+
+const numbers = [1,2,3,4,5]
+console.log(numbers.myForEach((ele) => console.log(ele)))
