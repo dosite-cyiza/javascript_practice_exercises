@@ -67,3 +67,20 @@ const arrayStats = (arr)=>{
 
 }
 console.log(arrayStats([1,2,3,4,5]))
+
+// myReduce method 
+
+Array.prototype.myReduce = function (callback){
+    let resultReduce = 0
+    for(let i=0 ; i < this.length ; i++){
+        resultReduce =callback(resultReduce,this[i])
+       
+    }
+    return resultReduce
+
+}
+let myArray = [1,2,3,4,5]
+let reduceResult = myArray.myReduce((acc,curr) => acc + curr,0)
+console.log(reduceResult)
+
+
