@@ -71,11 +71,10 @@ console.log(arrayStats([1,2,3,4,5]))
 // myReduce method 
 
 Array.prototype.myReduce = function (callback){
-    let resultReduce 
-    for(let i ; i < this.length ; i++){
-        for( let j; j < this.length; j++){
-            resultReduce = callback(this[i] + this[j],0)
-        }
+    let resultReduce = 0
+    for(let i=0 ; i < this.length ; i++){
+        resultReduce =callback(resultReduce,this[i])
+       
     }
     return resultReduce
 
