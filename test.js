@@ -83,4 +83,9 @@ let myArray = [1,2,3,4,5]
 let reduceResult = myArray.myReduce((acc,curr) => acc + curr,0)
 console.log(reduceResult)
 
+let myArray2 = [1,2,3,4,5]
+let reduceResult2 = myArray2.myReduce((acc,curr) => acc - curr,0)
+console.log(reduceResult2)
+
+
 
