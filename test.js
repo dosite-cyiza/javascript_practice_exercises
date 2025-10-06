@@ -70,9 +70,11 @@ console.log(arrayStats([1,2,3,4,5]))
 
 // myReduce method 
 
-Array.prototype.myReduce = function (callback){
-    let resultReduce = 0
-    for(let i=0 ; i < this.length ; i++){
+Array.prototype.myReduce = function (callback,initialValue){
+       let resultReduce = initialValue !== undefined ? initialValue : this[0];
+    let startIndex = initialValue !== undefined ? 0 : 1;
+
+    for(let i = startIndex; i < this.length ; i++){
         resultReduce =callback(resultReduce,this[i])
        
     }
@@ -82,5 +84,11 @@ Array.prototype.myReduce = function (callback){
 let myArray = [1,2,3,4,5]
 let reduceResult = myArray.myReduce((acc,curr) => acc + curr,0)
 console.log(reduceResult)
+
+let myArray2 = [1,2,3,4,5]
+let reduceResult2 = myArray2.myReduce((acc,curr) => acc * curr,0)
+console.log(reduceResult2)
+
+
 
 
